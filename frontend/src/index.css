@@ -1,0 +1,29 @@
+.card-deck {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.rating {
+  margin-bottom: 0.5rem;
+}
+.rating span {
+  margin: 0.1rem;
+}
+.rating svg {
+  color: #dcd156
+}
+.rating-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding-left: 0.5rem;
+}
+.tittle {
+  height: 3.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis; /*Add ellipsis for long text*/
+  white-space: nowrap; /*prevent no wrap*/
+}
+.pro-title{
+  margin-top: 0;
+  text-align: center;
+}
