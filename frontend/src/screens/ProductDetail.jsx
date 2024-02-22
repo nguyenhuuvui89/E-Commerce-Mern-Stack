@@ -7,12 +7,18 @@ import Rating from "../components/Rating";
 
 const ProductDetail = () => {
   const [product, setProduct] = useState({})
-  const { id: productId } = useParams();
+  const { id: productId } = useParams(); // Get id from the front end URL
 
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const { data } = await axios.get(`/api/products/${productId}`)
+        const { data } = await axios.get(`/api/products/${productId}`) //fetching data from backend
+        // using proxy in package.json in frontend
+        // don't have to hardcode const { data } = await axios.get(`http://localhost:8000/api/products/${productId}`)
+        // "name": "frontend",
+        // "version": "0.1.0",
+        // "proxy": "http://localhost:8000",
+        // "private": true,
         setProduct(data)
       } catch (error) {
         console.log.error('Error fetching product data:', error.message);

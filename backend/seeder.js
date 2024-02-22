@@ -8,7 +8,6 @@ import Product from './models/productsModel.js';
 import Order from './models/orderModels.js';
 import connectDB from './config/db.js';
 
-
 dotenv.config();
 
 connectDB(); // Connect to MongoDB database online
