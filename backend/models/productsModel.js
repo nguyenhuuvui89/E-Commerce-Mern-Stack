@@ -31,11 +31,11 @@ const productSchema = new mongoose.Schema({
   },
   name: {
     type: String,
-    required: true,
+    required: false,
   },
   image: {
     type: String,
-    required: true,
+    required: false,
   },
   brand: {
     type: String,
@@ -43,7 +43,7 @@ const productSchema = new mongoose.Schema({
   },
   category: {
     type: String,
-    required: true,
+    required: false,
   },
   description: {
     type: String,
