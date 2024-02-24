@@ -82,7 +82,7 @@ const ProductDetail = () => {
                   <Row>
                     <Col>Quantity:</Col>
                     <Col>
-                      <input type="number" className="form-control" value={1} />
+                      <input type="number" className="form-control" value={product.countInStock} />
                     </Col>
                   </Row>
                 </ListGroup.Item>

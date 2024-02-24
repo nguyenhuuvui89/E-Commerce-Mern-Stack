@@ -19,6 +19,9 @@ const router = createBrowserRouter(
     <Route path="/" element={<App/>}>
         <Route index={true} path="/" element={<HomeScreen/>}/>
         <Route path="/product/:id" element={<ProductDetail/>}/>
+
+        {/* /* not get the config filter yet*/}
+        <Route path="/product/productName" element={<HomeScreen/>} />
     </Route>
   )
 )

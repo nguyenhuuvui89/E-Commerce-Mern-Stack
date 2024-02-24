@@ -1,16 +1,4 @@
-// import React from 'react'
-// import {Navbar, Nav, Container, NavDropdown} from 'react-bootstrap';
 import { FaShoppingCart, FaUser } from "react-icons/fa";
-
-// const Header = () => {
-//   return (
-//     <div>
-
-//     </div>
-//   )
-// }
-
-// export default Header
 
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -23,8 +11,13 @@ import { LinkContainer } from "react-router-bootstrap";
 function Header() {
   return (
     <header>
-      <Navbar bg="dark" expand="md" variant="dark" collapseOnSelect>
-        <Container>
+      <Navbar
+        style={{ backgroundColor: "#001926" }}
+        expand="lg"
+        variant="dark"
+        collapseOnSelect
+      >
+        <Container fluid>
           <LinkContainer to={"/"}>
             <Navbar.Brand>
               <img
@@ -38,13 +31,22 @@ function Header() {
                 }}
                 alt="Digital World"
               />{" "}
-              Digital World
+              Apple World
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
-              <LinkContainer to={"/cart"}>
+            <Nav className="ms-auto d-flex align-items-center ">
+              <Form className="d-flex me-5">
+                <Form.Control
+                  type="search"
+                  placeholder="Search"
+                  className="me-2"
+                  aria-label="Search"
+                />
+                <Button variant="outline-success">Search</Button>
+              </Form>
+              <LinkContainer to={"/cart"} className="me-3">
                 <Nav.Link>
                   <FaShoppingCart />
                   Cart
@@ -70,15 +72,6 @@ function Header() {
                 </NavDropdown.Item>
               </NavDropdown> */}
             </Nav>
-            {/* <Form className="d-flex">
-              <Form.Control
-                type="search"
-                placeholder="Search"
-                className="me-2"
-                aria-label="Search"
-              />
-              <Button variant="outline-success">Search</Button>
-            </Form> */}
           </Navbar.Collapse>
         </Container>
       </Navbar>

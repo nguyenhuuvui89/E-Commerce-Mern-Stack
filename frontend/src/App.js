@@ -8,7 +8,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <main className="py-3">
+      <main className="py-2" style={{ backgroundColor: '#212529', color: '#dee2e6' }}>
         <Container>
           <Outlet/>
         </Container>
