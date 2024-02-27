@@ -32,16 +32,15 @@ const Footer = () => {
       </section>
 
       <section className=''>
-        <MDBContainer className='text-center text-md-start mt-5'>
+        <MDBContainer className=' text-md-start mt-5'>
           <MDBRow className='mt-3'>
-            <MDBCol md='3' lg='4' xl='3' className='mx-auto mb-4'>
+            <MDBCol md='3' lg='4' xl='3' className='mx-auto mb-4 text-justify'>
               <h6 className='text-uppercase fw-bold mb-4'>
                 <MDBIcon color='secondary' icon='gem' className='me-3' />
-                Company name
+                iGadgetStore
               </h6>
-              <p>
-                Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit
-                amet, consectetur adipisicing elit.
+              <p style={{ textAlign: 'justify' }}>
+              we specialize in delivering top-notch digital products tailored to the needs of today's tech-savvy consumers. Our curated selection ensures access to cutting-edge software and content, offering a seamless and enriching digital experience for our customers.
               </p>
             </MDBCol>
 
@@ -49,22 +48,22 @@ const Footer = () => {
               <h6 className='text-uppercase fw-bold mb-4'>Products</h6>
               <p>
                 <a href='#!' className='text-reset'>
-                  Angular
+                  Iphone
                 </a>
               </p>
               <p>
                 <a href='#!' className='text-reset'>
-                  React
+                  Ipad
                 </a>
               </p>
               <p>
                 <a href='#!' className='text-reset'>
-                  Vue
+                  MacBook
                 </a>
               </p>
               <p>
                 <a href='#!' className='text-reset'>
-                  Laravel
+                  Accessories
                 </a>
               </p>
             </MDBCol>
@@ -115,9 +114,9 @@ const Footer = () => {
       </section>
 
       <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
-        © {currentDate} Copyright:
-        <a className='text-reset fw-bold' href='https://mdbootstrap.com/'>
-          MDBootstrap.com
+        © {currentDate} Copyright: 
+        <a className='text-reset fw-bold px-2 text-decoration-none' href='/'>
+        iGadgetStore
         </a>
       </div>
     </MDBFooter>

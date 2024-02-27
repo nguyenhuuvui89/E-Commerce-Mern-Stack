@@ -30,7 +30,7 @@ const FilterProduct = () => {
         to={`/product/productName?name=Macbook`}
       >
         <ListGroup.Item className="bg-transparent text-white flex-grow-1 flex-shrink-1 text-center border-0">
-          Macbook
+          MacBook
         </ListGroup.Item>
       </Link>
       <Link

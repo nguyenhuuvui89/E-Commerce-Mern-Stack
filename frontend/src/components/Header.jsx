@@ -31,7 +31,7 @@ function Header() {
                 }}
                 alt="Digital World"
               />{" "}
-              Apple World
+              iGadgetStore
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -44,7 +44,7 @@ function Header() {
                   className="me-2"
                   aria-label="Search"
                 />
-                <Button variant="outline-success">Search</Button>
+                <Button variant="secondary">Search</Button>
               </Form>
               <LinkContainer to={"/cart"} className="me-3">
                 <Nav.Link>
