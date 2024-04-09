@@ -10,10 +10,10 @@ const Rating = ({ value, text }) => {
   };
 
   return (
-    <div className="rating">
+    <span className="rating">
       {[...Array(5)].map((_, index) => renderStar(index + 1))}
       <span className="rating-text">{text && text}</span>
-    </div>
+    </span>
   );
 };
 
